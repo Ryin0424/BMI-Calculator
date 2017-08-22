@@ -1,0 +1,211 @@
+@import _Reset.scss
+
+body,html
+  font-family:  Microsoft JhengHei
+
+.wrap
+  margin: 20px 0
+  width: 100%
+  height: 300px
+  background-color: #424242
+  // position: relative
+
+/*給予排版範圍*/
+.container
+  width: 1000px
+  height: 100%
+  // border: 1px solid #fff
+  margin: 0 auto
+  position: relative
+  padding: 0 15px
+  background-color: #424242;
+  
+.logo
+  float: left
+  margin-left: 5%
+  margin-top: 80px
+  height: 140px
+  width: 140px
+  background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/BMICLogo.png)  center center no-repeat
+  background-color: #FFD366
+  
+/*input*/
+form
+  float: left
+  // border: 1px solid pink
+  margin-left: 9.5%
+  // height: 300px
+  max-width: 24.8%
+  // width: 250px
+  p
+    margin-top: 52.5px
+    margin-bottom: 10.5px
+    color: #FFD366
+  input
+    float: left
+    width: 100%
+    height: 27px
+    background-color: #646464
+    border: 1px solid #FFD366
+    border-radius: 5px
+    padding: 5px
+    margin-bottom: 35px
+    color: #fff
+    font-size: 24px
+
+.btn 
+  // display: none
+  height: 130px
+  width: 130px
+  border-radius: 50%
+  border: none
+  background-color: #FFD366
+  color: #444
+  font-size: 28px
+  font-weight: 800
+  font-family:  Microsoft JhengHei
+  float: left
+  margin-top: 85px
+  margin-left: 9.3%
+  &:hover
+    box-shadow: 0px 0px 15px rgba(255, 196, 50, 0.7)
+  &:active
+    background-color: #DEA821
+    box-shadow: none
+    color: #555
+  
+/*BMI-BOX*/
+.BMI
+  display: none
+  // border: 1px solid #fff
+  height: 130px
+  max-width: 360px //應付undefined狀況
+  min-width: 260px
+  float: left
+  margin-top: 85px
+  margin-left: 9.3%
+#circle
+  float: left
+  height: 130px
+  width: 130px
+  border-radius: 50%
+  position: relative
+  margin-right: 20px
+  &:before
+    content: ""
+    display: block
+    background-color: #424242
+    height: 90%
+    width: 90%
+    border-radius: 50%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+#re
+  height: 30px
+  width: 30px
+  border: 4px solid #424242
+  border-radius: 50%
+  position: absolute
+  z-index: 1
+  bottom: 13px
+  right: -3px
+.fa
+  text-align: center
+  color: #dedede
+  line-height: 30px
+  
+/*BMI 數字狀態*/
+#main 
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  z-index: 1
+  text-align: center
+  font-weight: 800
+  p
+    font-size: 40px
+  span
+    font-size: 14px
+    font-weight: 200
+
+#BMI_text
+  float: right
+  font-size: 42px
+  font-weight: 900
+  line-height: 130px
+    
+
+/*動態加上*/
+// 理想 (18.5≦BMI＜24)
+.perfect
+  background-color: #86D73F
+.text-perfect
+  color: #86D73F
+.add-perfect
+  border-left: 25px solid #86D73F
+  
+// 過輕 (BMI ＜ 18.5)
+.thin
+  background-color: #31BAF9
+.text-thin
+  color: #31BAF9
+.add-thin
+  border-left: 25px solid #31BAF9
+  
+// 過重 (24≦BMI＜27)
+.over-weight
+  background-color: #FF982D
+.text-over-weight
+  color: #FF982D
+.add-over-weight
+  border-left: 25px solid #FF982D
+  
+// 輕度肥胖 (27≦BMI＜30) 、中度肥胖 (30≦BMI＜35)
+.heavy
+  background-color: #FF6C03
+.text-heavy
+  color: #FF6C03
+.add-heavy
+  border-left: 25px solid #FF6C03
+    
+// 重度肥胖 (BMI≧35)
+.obese
+  background-color: #FF1200
+.text-obese
+  color: #FF1200
+.add-obese
+  border-left: 25px solid #FF1200
+
+//BMI紀錄
+.note
+  margin: 20px auto
+  width: 750px
+  border: 1px solid
+  box-shadow: 4px 4px 15px #424242
+  padding: 30px
+  p
+  text-align: center
+  font-size: 24px
+  .list
+    margin-top: 20px
+    font-size: 18px
+    li
+      line-height: 1.5
+.note-box
+  padding-bottom: 40px
+
+//footer
+.footer
+  position: fixed
+  bottom: 0
+  margin-top: 20px
+  width: 100%
+  height: 35px
+  background-color: #424242
+  color: #fff
+  text-align: center
+  line-height: 35px
+  font-size: 18px
