@@ -2,7 +2,7 @@
 https://ryin0424.github.io/BMI-Calculator/
 
 ## BMI數值說明
-*BMI ＜ 18.5 = 過瘦
+* BMI ＜ 18.5 = 過瘦
 * 18.5 ≦ BMI ＜ 24 = 理想
 * 24 ≦ BMI ＜27 = 過重
 * 27 ≦ BMI ＜30 = 輕度肥胖
